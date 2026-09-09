@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: nginx
-        image: shalinidocker12/k8s-nginx-project:latest 
+        image: IMAGE_PLACEHOLDER 
         ports:
         - containerPort: 80
