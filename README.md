@@ -221,7 +221,7 @@ A running pod was manually deleted and Kubernetes automatically created a replac
 
 The worker node was manually terminated and the EKS managed node group automatically provisioned a replacement node.
 
-![New worker node after node termination](screenshots/workernode_recreated.JPG)
+![New worker node after node termination](screenshots/Workernode_recreated.JPG)
 
 ---
 
