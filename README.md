@@ -174,3 +174,68 @@ The application deployment was updated and the Kubernetes rollout was monitored.
 ## Result:
 
 The existing pods were gradually replaced with the updated pods, demonstrating a Kubernetes rolling update without requiring all replicas to be stopped simultaneously.
+
+
+## 📸 Project Screenshots
+
+### 1. Jenkins Pipeline – Successful Build
+
+Jenkins successfully executed the CI/CD pipeline and completed the application build and deployment process.
+
+> Screenshot: Jenkins successful pipeline build
+
+---
+
+### 2. Docker Image – Docker Hub
+
+The application Docker image was successfully built and pushed to Docker Hub.
+
+> Screenshot: Docker Hub image and tag
+
+---
+
+### 3. EKS Cluster and Worker Node
+
+The Amazon EKS cluster was successfully created and the worker node joined the cluster.
+
+> Screenshot: EKS cluster and worker node status
+
+---
+
+### 4. Kubernetes Pods
+
+Three application replicas were running successfully on the EKS worker node.
+
+> Screenshot: Kubernetes pods showing 3 replicas in Running state
+
+---
+
+### 5. Application Access – LoadBalancer
+
+The Kubernetes LoadBalancer successfully exposed the application.
+
+> Screenshot: Application accessed through LoadBalancer
+
+---
+
+### 6. Pod Self-Healing
+
+A running pod was manually deleted and Kubernetes automatically created a replacement pod.
+
+> Screenshot: Pod deletion followed by replacement pod creation
+
+---
+
+### 7. Worker Node Recovery
+
+The worker node was manually terminated and the EKS managed node group automatically provisioned a replacement node.
+
+> Screenshot: New worker node after node termination
+
+---
+
+### 8. Rolling Update
+
+The Kubernetes deployment was updated and the application pods were gradually replaced during the rollout.
+
+> Screenshot: Kubernetes rollout status
