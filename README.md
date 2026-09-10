@@ -230,3 +230,33 @@ The worker node was manually terminated and the EKS managed node group automatic
 The Kubernetes deployment was updated and the application pods were gradually replaced during the rollout.
 
 ![Kubernetes rollout status](screenshots/deployment_rollout.JPG)
+
+
+
+## 🎯 Project Summary
+
+This project demonstrates a complete DevOps workflow for deploying a containerized application on Amazon EKS.
+
+The application source code is managed using GitHub, while Jenkins automates the CI/CD process. Docker is used to build and publish the application image, and Kubernetes manages the application deployment on Amazon EKS.
+
+The project also demonstrates Kubernetes rolling updates, pod self-healing, and EKS worker node recovery through hands-on testing.
+
+### Key Skills Demonstrated
+
+- AWS EKS cluster management
+- EC2 and IAM configuration
+- Jenkins CI/CD automation
+- Docker image creation and publishing
+- Kubernetes Deployments and Services
+- Rolling updates
+- Pod self-healing
+- EKS managed worker node recovery
+- Git and GitHub workflow
+
+## 👩‍💻 Author
+
+**Shalini Ashok**
+
+Cloud & DevOps Learner
+
+Technologies: AWS | Azure | Linux | Docker | Kubernetes | Jenkins | Terraform
