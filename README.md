@@ -182,7 +182,7 @@ The existing pods were gradually replaced with the updated pods, demonstrating a
 
 Jenkins successfully executed the CI/CD pipeline and completed the application build and deployment process.
 
-> Screenshot: Jenkins successful pipeline build
+![Jenkins Pipeline](screenshots/success_build.JPG)
 
 ---
 
@@ -190,23 +190,14 @@ Jenkins successfully executed the CI/CD pipeline and completed the application b
 
 The application Docker image was successfully built and pushed to Docker Hub.
 
-> Screenshot: Docker Hub image and tag
+![Docker_Image](screenshots/dockerhub_image.JPG)
 
 ---
-
-### 3. EKS Cluster and Worker Node
-
-The Amazon EKS cluster was successfully created and the worker node joined the cluster.
-
-> Screenshot: EKS cluster and worker node status
-
----
-
-### 4. Kubernetes Pods
+### 3. Kubernetes Pods
 
 Three application replicas were running successfully on the EKS worker node.
 
-> Screenshot: Kubernetes pods showing 3 replicas in Running state
+![Kubernetes pods showing 3 replicas in Running state](screenshots/running_pods.JPG)
 
 ---
 
