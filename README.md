@@ -50,13 +50,13 @@ Developer
      Application
 
 
-Technologies Used
-AWS
-Amazon EKS
-Amazon EC2
-IAM
-Jenkins
-Docker
-Kubernetes
-GitHub
-Docker Hub
+##Technologies Used
+- AWS
+- Amazon EKS
+- Amazon EC2
+- IAM
+- Jenkins
+- Docker
+- Kubernetes
+- GitHub
+- Docker Hub
