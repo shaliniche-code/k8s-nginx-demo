@@ -96,3 +96,30 @@ Kubernetes Deployment
 Rolling Update
    ↓
 Application
+```
+
+## ☸️ Kubernetes Deployment
+
+The application is deployed on an Amazon EKS cluster using Kubernetes manifests.
+
+### Kubernetes Resources
+
+- **Deployment** – Manages the application pods and maintains 3 replicas.
+- **Service** – Exposes the application using an AWS LoadBalancer.
+- **Pods** – Run the containerized NGINX application on the EKS worker node.
+- **Worker Node** – Provides the compute capacity for running the application.
+
+### Deployment Configuration
+
+The Kubernetes Deployment is configured with:
+
+- Replicas: 3
+- Application: NGINX
+- Container image: Docker image stored in Docker Hub
+- Service type: LoadBalancer
+
+### Rolling Update
+
+When a new Docker image is deployed, Kubernetes gradually replaces the existing pods with new pods.
+
+This allows the application to be updated without bringing down all replicas at the same time.
