@@ -49,6 +49,12 @@ Developer
           ▼
      Application
 
+## 🛠️ Technologies Used
+
+- AWS
+- Amazon EKS
+- Amazon EC2
+
 
 ##Technologies Used
 - AWS
