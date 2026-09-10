@@ -61,3 +61,38 @@ Developer
 - Kubernetes
 - GitHub
 - Docker Hub
+
+## 🔄 CI/CD Pipeline
+
+The project uses Jenkins to automate the application build and deployment process.
+
+### Pipeline Flow
+
+1. Developer pushes code to GitHub.
+2. Jenkins detects the code change through a GitHub webhook.
+3. Jenkins pulls the latest source code.
+4. Jenkins builds the Docker image.
+5. The Docker image is tagged with the Jenkins build number.
+6. Jenkins pushes the image to Docker Hub.
+7. Jenkins updates the Kubernetes deployment with the new image.
+8. Kubernetes performs a rolling update of the application pods.
+9. The updated application is exposed through a Kubernetes LoadBalancer.
+
+### CI/CD Workflow
+
+```text
+GitHub
+   ↓
+Jenkins
+   ↓
+Docker Build
+   ↓
+Docker Hub
+   ↓
+Amazon EKS
+   ↓
+Kubernetes Deployment
+   ↓
+Rolling Update
+   ↓
+Application
