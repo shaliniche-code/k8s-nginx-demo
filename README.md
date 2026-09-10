@@ -201,32 +201,32 @@ Three application replicas were running successfully on the EKS worker node.
 
 ---
 
-### 5. Application Access – LoadBalancer
+### 4. Application Access – LoadBalancer
 
 The Kubernetes LoadBalancer successfully exposed the application.
 
-> Screenshot: Application accessed through LoadBalancer
+![Application accessed through LoadBalancer](screenshots/nginx_application.JPG)
 
 ---
 
-### 6. Pod Self-Healing
+### 5. Pod Self-Healing
 
 A running pod was manually deleted and Kubernetes automatically created a replacement pod.
 
-> Screenshot: Pod deletion followed by replacement pod creation
+![Pod deletion followed by replacement pod creation](screenshots/pod_autocreation.JPG)
 
 ---
 
-### 7. Worker Node Recovery
+### 6. Worker Node Recovery
 
 The worker node was manually terminated and the EKS managed node group automatically provisioned a replacement node.
 
-> Screenshot: New worker node after node termination
+![New worker node after node termination](screenshots/workernode_recreated.JPG)
 
 ---
 
-### 8. Rolling Update
+### 7. Rolling Update
 
 The Kubernetes deployment was updated and the application pods were gradually replaced during the rollout.
 
-> Screenshot: Kubernetes rollout status
+![Kubernetes rollout status](screenshots/deployment_rollout.JPG)
