@@ -123,3 +123,54 @@ The Kubernetes Deployment is configured with:
 When a new Docker image is deployed, Kubernetes gradually replaces the existing pods with new pods.
 
 This allows the application to be updated without bringing down all replicas at the same time.
+
+## 🧪 Testing & Self-Healing
+
+The Kubernetes deployment was tested to verify application availability and automatic recovery.
+
+### 1. Pod Self-Healing
+
+A running application pod was manually deleted to test Kubernetes self-healing.
+
+**Result:**
+
+Kubernetes automatically created a replacement pod to maintain the desired replica count.
+
+```text
+Before:
+Pod 1    Pod 2    Pod 3
+  ✓        ✓        ✓
+
+Delete Pod 2
+       ↓
+
+Kubernetes detects missing replica
+       ↓
+
+New Pod created
+       ↓
+
+Pod 1    Pod 2    Pod 3
+  ✓        ✓        ✓
+```
+
+## 2. Worker Node Recovery
+
+The EKS worker node was manually terminated to test node recovery.
+
+The managed node group was configured with:
+
+- Minimum nodes: 1
+- Maximum nodes: 2
+
+## Result:
+
+After the worker node was terminated, EKS automatically provisioned a replacement worker node to maintain the required capacity.
+
+## 3. Rolling Update Verification
+
+The application deployment was updated and the Kubernetes rollout was monitored.
+
+## Result:
+
+The existing pods were gradually replaced with the updated pods, demonstrating a Kubernetes rolling update without requiring all replicas to be stopped simultaneously.
